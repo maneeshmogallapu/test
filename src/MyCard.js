@@ -74,10 +74,10 @@ const MyCard = ({ details }) => {
               <Card className="card">
                 <CardBody>
                   <CardTitle>
-                    <h3>{item.year}</h3>
+                    <h3 className="year">{item.year}</h3>
                   </CardTitle>
                   <CardText>
-                    <h4>{item.category}</h4>
+                    <h4 className="category">{item.category}</h4>
                     {item.laureates?.map((laureate) => (
                     <div>
                       <h4>{laureate.firstname} {laureate.surname}</h4>
